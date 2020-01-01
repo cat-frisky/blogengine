@@ -1,3 +1,5 @@
+{% load humanize %}
+
 <div class="card text-center">
  <div class="card-header">
  tags:
@@ -11,6 +13,6 @@
  <a href="{{post.get_absolute_url}}" class="btn btn-primary">читать</a>
  </div>
  <div class="card-footer text-muted">
- {{post.date_pub}}
+ {{post.date_pub|naturaltime}}
  </div>
  </div>
