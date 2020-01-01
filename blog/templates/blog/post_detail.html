@@ -1,0 +1,9 @@
+{% extends 'base_blog.html' %}
+
+{% block title %}{{post.title}} - {{block.super}}{% endblock %}
+
+{% block content %}
+  <h3>{{post.title}}</h3>
+  <p>{{post.body}}</p>
+  
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base_blog.html' %}
+
+{% block title %}blog{% endblock %}
+
+{% block content %}
+{% for post in page_object.object_list %}
+<div class="mb-5">
+  {% include 'blog/includes/post_card_template.html' %}
+</div>
+{% endfor %}
+
+{% endblock %}
